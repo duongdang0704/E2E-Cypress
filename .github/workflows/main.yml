@@ -14,8 +14,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5 # use the explicit version number
         with:
-          build: npm run build # build the app
-          start: npm start # start the server
           browser: chrome # run test on firefox
                     
           # Records to Cypress Cloud 
