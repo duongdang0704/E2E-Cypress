@@ -15,18 +15,16 @@ jobs:
         uses: cypress-io/github-action@v5 # use the explicit version number
         with:
           browser: chrome # run test on firefox
-                    
-          # Records to Cypress Cloud 
-          # https://docs.cypress.io/guides/cloud/projects#Set-up-a-project-to-record
-          record: false
-          parallel: true # Runs test in parallel using settings above
+          
       - name: Copy test execution videos
         run: |
           mkdir public
           cp -r cypress/videos videos
           cp -r cypress/screenshots screenshots
+          
       - name: Merge test results
         run: npm run report:merge
+        
       - name: Generate HTML report
         run: npm run report:generate
 
