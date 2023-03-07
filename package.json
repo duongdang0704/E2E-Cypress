@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "rm -rf mochawesome-report mochawesome.json && cypress run",
-    "report-merge": "mochawesome-merge cypress/results/*.json > mochawesome.json",
-    "report-generate": "marge mochawesome.json"
+    "report:merge": "mochawesome-merge cypress/results/*.json > mochawesome.json",
+    "report:generate": "marge mochawesome.json"
   },
   "repository": {
     "type": "git",
