@@ -24,7 +24,6 @@ before(()=>{
     console.log('Before all tests');
 })
 beforeEach(()=>{
-    cy.visit('/')
     console.log('Before each tests');
 })
 after(()=>{

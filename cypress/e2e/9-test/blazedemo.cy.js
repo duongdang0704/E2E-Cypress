@@ -7,7 +7,7 @@ describe('Book a flight', ()=>{
         });
     })
    
-    it('Book a flight', ()=>{
+    it.only('Book a flight', ()=>{
         cy.visit('https://blazedemo.com/');
         cy.get('[name="fromPort"]').select('Boston')
         cy.get('[name="toPort"]').select('London')

@@ -12,8 +12,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "https://learn.cypress.io/testing-your-first-application",
     experimentalStudio: true,
-    specPattern: 'cypress/e2e/1-testing-your-first-app/*.cy.{js,jsx,ts,tsx}',
+    specPattern: 'cypress/e2e/9-test/*.cy.{js,jsx,ts,tsx}',
   },
 });
